@@ -1,4 +1,4 @@
-<h1>ANGULAR CAPACITACION</h1>
+<h1>ANGULAR CAPACITACION: {{title}}</h1>
 <hr>
 
 <h2>ANGULAR CLI</h2>
@@ -32,3 +32,33 @@
         <b>Pull changes:</b> git pull
     </li>
 </ul>
+
+<h2>RENDER</h2>
+<ul>
+    <li>
+        <b>Author:</b> {{author}}
+    </li>
+</ul>
+
+<h2>EVENTS</h2>
+<ul>
+    <li>
+        <b>Clicks:</b> {{clickCounter}} - <button (click)="clickme()">clickme</button>
+    </li>
+    <li (mouseover)="hoverIn()" (mouseout)="hoverOut()">
+        <b>Hover:</b> {{isHover}}
+    </li>
+</ul>
+
+<h2>DIRECTIVES</h2>
+<ul>
+    <li>
+        <b>NG-IF:</b>
+        <span *ngIf="clickCounter < 10">showme if clickCounter is less than 10</span>
+        <span *ngIf="clickCounter > 10">showme if clickCounter is bigger than 10 </span>
+    </li>
+    <li>
+        <b>NG-FOR:</b> Participants: <span *ngFor="let participant of participants">{{participant}} &nbsp;</span>
+    </li>
+</ul>
+
