@@ -45,7 +45,13 @@
 
 <h2>EVENTS</h2>
 <ul>
-    <li>
+    <li [ngClass]="
+    {   
+        'color-green': clickCounter <= 10,
+        'color-yellow': (clickCounter > 10 && clickCounter < 20),
+        'color-red': clickCounter >= 20
+    }"
+    >
         <b>Clicks:</b> {{clickCounter}} - <button (click)="clickme()">clickme</button>
     </li>
     <li (mouseover)="hoverIn()" (mouseout)="hoverOut()">
@@ -80,4 +86,25 @@
             </a>
         </li>
     </ul>
+
+<h2>FORMS</h2>
+<form [formGroup]="form" (submit)="submitForm()">
+    <ul>
+        <li>
+            <input type="text" id="name" formControlName="name" placeholder="name"> <b>{{nameControl.valid}}</b>
+        </li>
+        <li>
+            <input type="number" id="age" formControlName="age" placeholder="age"> <b>{{ageControl.valid}}</b>
+        </li>
+        <li>
+            <input type="text" id="email" formControlName="email" placeholder="email"> <b>{{emailControl.valid}}</b>
+        </li>
+        <li>
+            FORM valid: <b>{{form.valid}}</b>
+        </li>
+        <li>
+            <button type="submit">submit</button>
+        </li>
+    </ul>
+</form>
 
