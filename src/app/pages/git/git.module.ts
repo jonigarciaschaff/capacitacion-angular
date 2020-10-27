@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AngularCliRoutingModule } from './angular-cli-routing.module';
-import { AngularCliComponent } from './angular-cli.component';
+import { GitRoutingModule } from './git-routing.module';
+import { GitComponent } from './git.component';
 import { CommonComponentsModule } from 'src/app/components/common-components.module';
 
 
 @NgModule({
-  declarations: [AngularCliComponent],
+  declarations: [GitComponent],
   imports: [
     CommonModule,
-    AngularCliRoutingModule,
+    GitRoutingModule,
     CommonComponentsModule
   ]
 })
-export class AngularCliModule { }
+export class GitModule { }

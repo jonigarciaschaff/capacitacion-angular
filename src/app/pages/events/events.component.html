@@ -1,0 +1,16 @@
+<h1>EVENTS</h1>
+<app-back></app-back>
+<ul>
+    <li [ngClass]="
+    {   
+        'color-green': clickCounter <= 10,
+        'color-yellow': (clickCounter > 10 && clickCounter < 20),
+        'color-red': clickCounter >= 20
+    }"
+    >
+        <b>Clicks:</b> {{clickCounter}} - <button (click)="clickme()">clickme</button>
+    </li>
+    <li (mouseover)="hoverIn()" (mouseout)="hoverOut()">
+        <b>Hover:</b> {{isHover}}
+    </li>
+</ul>

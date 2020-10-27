@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AngularCliRoutingModule } from './angular-cli-routing.module';
-import { AngularCliComponent } from './angular-cli.component';
+import { RenderRoutingModule } from './render-routing.module';
+import { RenderComponent } from './render.component';
 import { CommonComponentsModule } from 'src/app/components/common-components.module';
 
 
 @NgModule({
-  declarations: [AngularCliComponent],
+  declarations: [RenderComponent],
   imports: [
     CommonModule,
-    AngularCliRoutingModule,
+    RenderRoutingModule,
     CommonComponentsModule
   ]
 })
-export class AngularCliModule { }
+export class RenderModule { }

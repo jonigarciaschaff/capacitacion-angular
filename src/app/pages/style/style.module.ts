@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AngularCliRoutingModule } from './angular-cli-routing.module';
-import { AngularCliComponent } from './angular-cli.component';
+import { StyleRoutingModule } from './style-routing.module';
+import { StyleComponent } from './style.component';
 import { CommonComponentsModule } from 'src/app/components/common-components.module';
 
 
 @NgModule({
-  declarations: [AngularCliComponent],
+  declarations: [StyleComponent],
   imports: [
     CommonModule,
-    AngularCliRoutingModule,
+    StyleRoutingModule,
     CommonComponentsModule
   ]
 })
-export class AngularCliModule { }
+export class StyleModule { }

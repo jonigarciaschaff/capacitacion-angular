@@ -1,0 +1,11 @@
+<h1>Pipe</h1>
+<app-back></app-back>
+
+<ul>
+    <li>
+        <b>Today is:</b>  {{today | date:"hh:mm:ss dd/MM/yyyy"}}
+    </li>
+    <li>
+        <b>Multiplicate:</b>  {{numberExample}} x {{multiplicatorExample}} = {{numberExample | multiplicate:multiplicatorExample}}
+    </li>
+</ul>

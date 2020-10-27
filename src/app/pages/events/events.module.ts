@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AngularCliRoutingModule } from './angular-cli-routing.module';
-import { AngularCliComponent } from './angular-cli.component';
+import { EventsRoutingModule } from './events-routing.module';
+import { EventsComponent } from './events.component';
 import { CommonComponentsModule } from 'src/app/components/common-components.module';
 
 
 @NgModule({
-  declarations: [AngularCliComponent],
+  declarations: [EventsComponent],
   imports: [
     CommonModule,
-    AngularCliRoutingModule,
+    EventsRoutingModule,
     CommonComponentsModule
   ]
 })
-export class AngularCliModule { }
+export class EventsModule { }

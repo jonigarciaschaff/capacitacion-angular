@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AngularCliRoutingModule } from './angular-cli-routing.module';
-import { AngularCliComponent } from './angular-cli.component';
+import { HttpRoutingModule } from './http-routing.module';
+import { HttpComponent } from './http.component';
 import { CommonComponentsModule } from 'src/app/components/common-components.module';
 
 
 @NgModule({
-  declarations: [AngularCliComponent],
+  declarations: [HttpComponent],
   imports: [
     CommonModule,
-    AngularCliRoutingModule,
+    HttpRoutingModule,
     CommonComponentsModule
   ]
 })
-export class AngularCliModule { }
+export class HttpModule { }
