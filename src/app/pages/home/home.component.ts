@@ -13,11 +13,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.weaterService.get().subscribe(
-      (response) => {
-        console.log('response', response);
-      }
-    )
+
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherService } from 'src/app/services/weather.service';
 
 @Component({
   selector: 'app-http',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HttpComponent implements OnInit {
 
-  constructor() { }
+  days: Array<any> = [];
+
+  constructor(
+    private weatherService: WeatherService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  getWeather() {
+    this.weatherService.get().subscribe(
+       (response: any) => {
+         this.days = response.forecast.forecastday;
+       }
+    )
   }
 
 }

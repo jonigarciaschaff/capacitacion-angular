@@ -1,2 +1,14 @@
 <app-title title="HTTP"></app-title>
 <app-back></app-back>
+
+<div class="actions">
+    <button (click)="getWeather()">
+        Get weather
+    </button>
+</div>
+
+<ul>
+    <li *ngFor="let day of days">
+        {{day.date}} &nbsp; - &nbsp; {{day.day.condition.text}} &nbsp; - &nbsp; <img [src]="day.day.condition.icon">
+    </li>
+</ul>
