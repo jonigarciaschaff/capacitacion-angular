@@ -1,0 +1,11 @@
+.sidebar-container {
+    border: solid rgba(0, 0, 0, 0.125) 1px;
+    position: fixed;
+    width: 200px;
+    bottom: 0;
+    top: 80px;
+}
+
+li:hover {
+    opacity: 0.5;
+}

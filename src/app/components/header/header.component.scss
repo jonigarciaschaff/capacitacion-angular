@@ -1,0 +1,19 @@
+.header-container {
+    position: fixed;
+    background-color: lavender;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .menu-icon {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .logo {
+        a { 
+            color: black;
+        }
+    }
+}

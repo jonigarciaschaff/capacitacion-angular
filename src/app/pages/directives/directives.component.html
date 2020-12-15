@@ -1,21 +1,23 @@
 <app-title title="DIRECTIVES"></app-title>
-<app-back></app-back>
-<ul>
-    <li>
-        <b style="color: red">NG-IF:</b>
-        <span *ngIf="clickCounter < 10">showme if clickCounter is less than 10</span>
-        <span *ngIf="clickCounter > 10">showme if clickCounter is bigger than 10 </span>
-    </li>
-    <li>
-        <b class="color-blue">NG-FOR:</b> Participants:
-        <ng-container *ngFor="let participant of participants">
-            <button appLog [value]="participant">{{participant}}</button>
-        </ng-container>
-    </li>
-    <li>
-        <b>LOG: </b> <button appLog value="123">Log directive</button>
-    </li>
-    <li>
-        <b>CHANGE COLOR: </b> <span appChangeColor>example color</span>
-    </li>
-</ul>
+<div class="container">
+    <app-back></app-back>
+    <ul>
+        <li>
+            <b style="color: red">NG-IF:</b>
+            <span *ngIf="clickCounter < 10">showme if clickCounter is less than 10</span>
+            <span *ngIf="clickCounter > 10">showme if clickCounter is bigger than 10 </span>
+        </li>
+        <li>
+            <b class="color-blue">NG-FOR:</b> Participants:
+            <ng-container *ngFor="let participant of participants">
+                <button appLog [value]="participant">{{participant}}</button>
+            </ng-container>
+        </li>
+        <li>
+            <b>LOG: </b> <button appLog value="123">Log directive</button>
+        </li>
+        <li>
+            <b>CHANGE COLOR: </b> <span appChangeColor>example color</span>
+        </li>
+    </ul>
+</div>

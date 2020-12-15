@@ -1,16 +1,18 @@
 <app-title title="EVENTS"></app-title>
-<app-back></app-back>
-<ul>
-    <li [ngClass]="
-    {   
-        'color-green': clickCounter <= 10,
-        'color-yellow': (clickCounter > 10 && clickCounter < 20),
-        'color-red': clickCounter >= 20
-    }"
-    >
-        <b>Clicks:</b> {{clickCounter}} - <button (click)="clickme()">clickme</button>
-    </li>
-    <li (mouseover)="hoverIn()" (mouseout)="hoverOut()">
-        <b>Hover:</b> {{isHover}}
-    </li>
-</ul>
+<div class="container">
+    <app-back></app-back>
+    <ul>
+        <li [ngClass]="
+        {   
+            'color-green': clickCounter <= 10,
+            'color-yellow': (clickCounter > 10 && clickCounter < 20),
+            'color-red': clickCounter >= 20
+        }"
+        >
+            <b>Clicks:</b> {{clickCounter}} - <button (click)="clickme()">clickme</button>
+        </li>
+        <li (mouseover)="hoverIn()" (mouseout)="hoverOut()">
+            <b>Hover:</b> {{isHover}}
+        </li>
+    </ul>
+</div>

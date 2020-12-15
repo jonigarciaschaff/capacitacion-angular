@@ -1,14 +1,16 @@
 <app-title title="HTTP"></app-title>
-<app-back></app-back>
+<div class="container">
+    <app-back></app-back>
 
-<div class="actions">
-    <button (click)="getWeather()">
-        Get weather
-    </button>
+    <div class="actions">
+        <button (click)="getWeather()">
+            Get weather
+        </button>
+    </div>
+    
+    <ul>
+        <li *ngFor="let day of days">
+            {{day.date}} &nbsp; - &nbsp; {{day.day.condition.text}} &nbsp; - &nbsp; <img [src]="day.day.condition.icon" height="40">
+        </li>
+    </ul>    
 </div>
-
-<ul>
-    <li *ngFor="let day of days">
-        {{day.date}} &nbsp; - &nbsp; {{day.day.condition.text}} &nbsp; - &nbsp; <img [src]="day.day.condition.icon">
-    </li>
-</ul>

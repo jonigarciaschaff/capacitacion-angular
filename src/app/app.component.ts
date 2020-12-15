@@ -7,5 +7,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  showSidebar = true;
+
   constructor() {}
 }

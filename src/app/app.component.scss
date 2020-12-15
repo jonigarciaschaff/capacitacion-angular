@@ -1,0 +1,10 @@
+.outlet-container {
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+    .outlet-container {
+        margin-left: 0;
+    }
+}
