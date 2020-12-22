@@ -1,5 +1,5 @@
 
-<app-header></app-header>
+<app-header (toggle)="toggleHeaderMenu()" ></app-header>
 <app-sidebar *ngIf="showSidebar"></app-sidebar>
 <div class="outlet-container">
     <router-outlet></router-outlet>

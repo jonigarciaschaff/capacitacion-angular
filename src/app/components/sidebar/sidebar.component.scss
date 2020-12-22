@@ -4,8 +4,10 @@
     width: 200px;
     bottom: 0;
     top: 80px;
+    z-index: 1;
+    background-color: white;
 }
 
 li:hover {
-    opacity: 0.5;
+    background-color: bisque;
 }

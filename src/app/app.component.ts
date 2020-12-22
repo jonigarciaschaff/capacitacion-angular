@@ -11,4 +11,9 @@ export class AppComponent {
   showSidebar = true;
 
   constructor() {}
+
+  toggleHeaderMenu(){
+    this.showSidebar = !this.showSidebar;
+  }
+  
 }
