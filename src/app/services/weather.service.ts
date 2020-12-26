@@ -15,7 +15,7 @@ export class WeatherService {
       'http://api.weatherapi.com/v1/forecast.json',
       {
         params: {
-          key: 'abd93d2d42ba43388c503011202710',
+          key: 'API_KEY',
           q: 'Rosario santa fe',
           days: '7'
         },
